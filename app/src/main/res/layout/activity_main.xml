@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <DigitalClock
+        android:id="@+id/dClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#BDBDBD"
+        android:layout_marginTop="65dp"
+        android:textSize="35dp" />
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <TextView
+            android:id="@+id/clock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="闹钟1"
+            android:textColor="#757575"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/settime1"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="120dp"
+            android:text="设置闹钟"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="120dp" />
+
+        <Button
+            android:id="@+id/delete1"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="100dp"
+            android:text="重新设置"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/show1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settime1"
+            android:layout_alignStart="@+id/clock1"
+            android:layout_marginTop="-22dp"
+            android:text="目前未设置"
+            android:textColor="#BDBDBD"
+            android:layout_alignLeft="@+id/clock1" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <TextView
+            android:id="@+id/clock2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="闹钟2"
+            android:textColor="#757575"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/settime2"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginRight="100dp"
+            android:text="设置闹钟"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/delete2"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="重新设置"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/show2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settime2"
+            android:layout_alignStart="@+id/clock2"
+            android:layout_marginTop="-22dp"
+            android:text="目前未设置"
+            android:textColor="#BDBDBD"
+            android:layout_alignLeft="@+id/clock2" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <TextView
+            android:id="@+id/clock3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="闹钟3"
+            android:textColor="#757575"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/settime3"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginRight="100dp"
+            android:text="设置闹钟"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/delete3"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="重新设置"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/show3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settime3"
+            android:layout_alignStart="@+id/clock3"
+            android:layout_marginTop="-22dp"
+            android:text="目前未设置"
+            android:textColor="#BDBDBD"
+            android:layout_alignLeft="@+id/clock3" />
+    </RelativeLayout>
+
+
+</LinearLayout>
