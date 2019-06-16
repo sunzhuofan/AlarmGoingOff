@@ -13,12 +13,21 @@ public class OpenActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_open);
-        Button btn1 = (Button)findViewById(R.id.button);
+
         Button btn2 = (Button)findViewById(R.id.button2);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(OpenActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn1 = (Button)findViewById(R.id.button);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(OpenActivity.this,TimeActivity.class);
                 startActivity(intent);
             }
         });
