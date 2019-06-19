@@ -9,6 +9,7 @@
     android:paddingLeft="16dp"
     android:paddingBottom="16dp"
     android:orientation="vertical"
+    android:background="@drawable/backgroundsecond"
     tools:context=".MainActivity">
 
     <DigitalClock
@@ -16,9 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textColor="#BDBDBD"
-        android:layout_marginTop="65dp"
-        android:textSize="35dp" />
+        android:layout_marginTop="120dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="35dp"
+        android:textStyle="bold" />
 
     <RelativeLayout
         android:layout_height="wrap_content"
@@ -30,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:text="闹钟1"
-            android:textColor="#757575"
+            android:textColor="@color/colorPrimary"
             android:textSize="20dp" />
 
         <Button
@@ -67,7 +69,7 @@
             android:layout_alignStart="@+id/clock1"
             android:layout_marginTop="-22dp"
             android:text="目前未设置"
-            android:textColor="#BDBDBD"
+            android:textColor="#90a4ae"
             android:layout_alignLeft="@+id/clock1" />
     </RelativeLayout>
 
@@ -90,7 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="闹钟2"
-            android:textColor="#757575"
+            android:textColor="@color/colorPrimary"
             android:textSize="20dp" />
 
         <Button
@@ -127,7 +129,7 @@
             android:layout_alignStart="@+id/clock2"
             android:layout_marginTop="-22dp"
             android:text="目前未设置"
-            android:textColor="#BDBDBD"
+            android:textColor="#90a4ae"
             android:layout_alignLeft="@+id/clock2" />
     </RelativeLayout>
 
@@ -149,7 +151,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="闹钟3"
-            android:textColor="#757575"
+            android:textColor="@color/colorPrimary"
             android:textSize="20dp" />
 
         <Button
@@ -186,7 +188,7 @@
             android:layout_alignStart="@+id/clock3"
             android:layout_marginTop="-22dp"
             android:text="目前未设置"
-            android:textColor="#BDBDBD"
+            android:textColor="#90a4ae"
             android:layout_alignLeft="@+id/clock3" />
     </RelativeLayout>
 

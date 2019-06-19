@@ -8,6 +8,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:background="@drawable/backgroundsecond"
     tools:context=".OpenActivity">
 
     <TextView
@@ -16,28 +17,34 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="AlarmGoingOff"
-        android:textSize="25dp"
         android:layout_marginTop="100dp"
-        android:textColor="#757575"/>
+        android:text="Alarm Going Off"
+        android:textColor="#757575"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:typeface="normal" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="213dp"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/btn_style"
         android:text="世界时钟"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="152dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/btn_style"
         android:text="闹钟"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
 </RelativeLayout>
