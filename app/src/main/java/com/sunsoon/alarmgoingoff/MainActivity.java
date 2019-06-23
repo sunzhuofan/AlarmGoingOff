@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
     String show2String = null;
     String show3String = null;
     String defaultString = "未设置闹钟";
-    AlertDialog builder = null;
     Calendar c = Calendar.getInstance();
     private MediaPlayer mediaPlayer;
 
@@ -256,30 +255,6 @@ public class MainActivity extends AppCompatActivity {
                 editor.commit();
             }
         });
-    }
-
-
-    @Override
-    public  boolean onKeyUp(int keyCode, KeyEvent event){
-        mediaPlayer.stop();
-        if (keyCode == KeyEvent.KEYCODE_BACK){
-            mediaPlayer.stop();
-            builder = new AlertDialog.Builder(MainActivity.this)
-                    .setTitle("温馨提示：").setMessage("您是否确定退出程序？")
-                    .setPositiveButton("确定",new DialogInterface.OnClickListener(){
-                        public void onClick(DialogInterface dialog,int whichButton){
-                            mediaPlayer.stop();
-                            MainActivity.this.finish();
-                        }
-                    })
-                    .setNegativeButton("取消",new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int whichButton) {
-                            mediaPlayer.stop();
-                            builder.dismiss();
-                        }
-                    }).show();
-        }
-        return true;
     }
 
 

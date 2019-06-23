@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".SetTextActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="新建备忘录"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="标题："
+        android:textSize="22dp" />
+
+
+    <EditText
+        android:id="@+id/text_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:maxLength="25" />
+
+
+    <EditText
+        android:id="@+id/text_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#00FFFFFF"
+        android:hint="请在此输入内容......" />
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settime2"
+        android:layout_alignStart="@+id/clock2"
+        android:layout_marginTop="385dp"
+        android:textSize="15dp"
+        android:textColor="#90a4ae"
+        android:layout_alignLeft="@+id/clock2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="460dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BDBDBD"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="277dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/btn_style"
+        android:text="确定"
+        android:onClick="save"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+</RelativeLayout>

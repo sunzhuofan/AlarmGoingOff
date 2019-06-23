@@ -17,7 +17,7 @@
             android:name=".CallAlarm"
             android:process=".remote" />
 
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".AlarmAlert"
             android:label="@string/app_name" />
@@ -28,7 +28,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.sunsoon.alarmgoingoff.TimeActivity"></activity>
+        <activity android:name=".TimeActivity" />
+        <activity android:name=".TextActivity" />
+        <activity android:name=".SetTextActivity"></activity>
     </application>
 
 </manifest>
